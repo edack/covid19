@@ -22,8 +22,12 @@
        FILE SECTION.
       *-------------------------
        FD  COUNTRYS-FILE.
-       COPY COUNTRYS REPLACING ==:TAG1:== BY ==COUNTRYS==
-                               ==:TAG2:== BY ==C==.
+       01  COUNTRYS-REC.
+           03 C-CODE            PIC X(02).
+           03 C-NAME            PIC X(50).
+           03 C-SLUG            PIC X(50).
+      *  COPY COUNTRYS REPLACING ==:TAG1:== BY ==COUNTRYS==
+      *                         ==:TAG2:== BY ==C==.
       *-------------------------
        WORKING-STORAGE SECTION.
       *-------------------------

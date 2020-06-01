@@ -22,12 +22,12 @@
            03 WS-RESULT-CODE       PIC XX.
            03 WS-RESULT-MESSAGE    PIC X(30).
       *
-           COPY COUNTRYS REPLACING ==:TAG1:== BY ==WS-COUNTRYS==
-                                   ==:TAG2:== BY ==WS-C==.
-      * 01  WS-COUNTRYS-REC.
-      *     03 WS-C-CODE            PIC X(02).
-      *     03 WS-C-NAME            PIC X(50).
-      *     03 WS-C-SLUG            PIC X(50).
+      *     COPY '..\COBOL.CPY\COUNTRYS.CPY' REPLACING ==:TAG1:== BY ==WS-COUNTRYS==
+      *                             ==:TAG2:== BY ==WS-C==.
+       01  WS-COUNTRYS-REC.
+           03 WS-C-CODE            PIC X(02).
+           03 WS-C-NAME            PIC X(50).
+           03 WS-C-SLUG            PIC X(50).
       *=========================
        PROCEDURE DIVISION.
       *=========================
