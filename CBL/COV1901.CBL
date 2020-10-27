@@ -256,6 +256,7 @@
              WHEN WS-OPTION-UPDATE
                PERFORM UPDATE-COUNTRYS
                PERFORM UPDATE-COVID19D
+          END-EVALUATE
            .
       *
        UPDATE-COUNTRYS.
